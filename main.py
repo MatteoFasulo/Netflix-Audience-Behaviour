@@ -3,6 +3,7 @@ from fastapi.templating import Jinja2Templates
 import uvicorn
 import requests
 import os
+import random
 from dotenv import load_dotenv
 
 import pandas as pd
@@ -19,17 +20,21 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
 @app.get('/')
-def home():
-    return 'Hello'
+def home(request: Request, n: int = 8):
+    rec_sys = RecommendationSystem()
+
+    user_id = random.randint(0, 109760)
+    recommendations = rec_sys.get_user_recommendations(user_id, n)
+    return templates.TemplateResponse("recommendations.html", {"request": request, "recommendations": recommendations})
 
 @app.get('/recommendations/{user_id}')
-def get_recommendations(request: Request, user_id: int, n: int = 10):
+def get_recommendations(request: Request, user_id: int, n: int = 8):
     # Call your recommendation function and get recommendations for the user
     rec_sys = RecommendationSystem()
 
     recommendations = rec_sys.get_user_recommendations(user_id, n)
 
-    return templates.TemplateResponse("recommendations.html", {"request": request, "recommendations": recommendations})
+    return {"recommendations": recommendations}
 
 class RecommendationSystem:
     def __init__(self):
