@@ -109,6 +109,10 @@ Example API response:
 }
 ```
 
+## Dataset
+
+Kaggle dataset used: [Netflix audience behaviour - UK movies](https://www.kaggle.com/datasets/vodclickstream/netflix-audience-behaviour-uk-movies)
+
 ## Contributing
 
 Contributions are welcome! If you encounter any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
