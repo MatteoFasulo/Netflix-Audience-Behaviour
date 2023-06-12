@@ -3,7 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/downloads/release/python-370/)
 [![FastAPI Version](https://img.shields.io/badge/fastapi-0.68.1-green)](https://fastapi.tiangolo.com/)
 [![Uvicorn Version](https://img.shields.io/badge/uvicorn-0.17.4-yellow)](https://www.uvicorn.org/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/license-Apache2-blue.svg)](https://opensource.org/licenses/apache-2)
 
 A powerful recommendation system built with implicit Alternating Least Squares (ALS) algorithm, using the watch history data from Netflix UK. The system provides personalized movie recommendations based on user preferences and exposes an API route with FastAPI for easy integration into your applications.
 
