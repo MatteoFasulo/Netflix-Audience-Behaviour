@@ -93,9 +93,7 @@ Example API response:
       "title": "Movie 1",
       "release_date": "2022-01-01",
       "genres": "Action, Thriller",
-      "
-
-movie_id": 1234,
+      "movie_id": 1234,
       "poster": "http://image.tmdb.org/t/p/original/poster1.jpg",
       "overview": "Movie 1 is an exciting action-packed thriller."
     },
@@ -107,7 +105,6 @@ movie_id": 1234,
       "poster": "http://image.tmdb.org/t/p/original/poster2.jpg",
       "overview": "Movie 2 is a heartwarming drama with a touch of romance."
     },
-    ...
   ]
 }
 ```
