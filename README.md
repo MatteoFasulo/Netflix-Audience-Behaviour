@@ -18,7 +18,8 @@ The recommendation system is trained on a dataset containing the watch history o
 - Show movie details including title, description, genres, and release date
 - Utilize the TMDB API for fetching movie posters and additional details
 
-![Homepage](https://github.com/MatteoFasulo/Netflix-Audience-Behaviour/assets/74818541/eda5c662-072c-4b3b-8a76-48a74a2920d0)
+![Homepage](https://github.com/MatteoFasulo/Netflix-Audience-Behaviour/assets/74818541/13bab500-9688-4c58-b17c-d54b8bd9d50d)
+
 
 ## Prerequisites
 
